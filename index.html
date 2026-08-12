@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>I Love You ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loading">
+    <div class="loader-heart">♥</div>
+    <p>Preparando algo especial...</p>
+  </div>
+
+  <main id="app">
+
+    <canvas id="particles"></canvas>
+
+    <div class="stars"></div>
+
+    <header class="top">
+
+      <p class="small-title">
+        Una página hecha con cariño
+      </p>
+
+      <h1>
+        I Love You <span>♥</span>
+      </h1>
+
+      <p class="subtitle">
+        Mi persona favorita, mi lugar favorito.
+      </p>
+
+    </header>
+
+
+    <section class="scene">
+
+      <div class="floating-note note-1">
+        Siempre juntos ♥
+      </div>
+
+      <div class="floating-note note-2">
+        Eres especial ✨
+      </div>
+
+      <div class="floating-note note-3">
+        Te quiero mucho 💗
+      </div>
+
+      <div class="floating-note note-4">
+        Por siempre ♡
+      </div>
+
+
+      <div class="photo-orbit orbit-left">
+
+        <div class="photo-card">
+
+          <img
+            src="fotos/foto1.jpg"
+            alt="Foto 1"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="photo-orbit orbit-right">
+
+        <div class="photo-card">
+
+          <img
+            src="fotos/foto2.jpg"
+            alt="Foto 2"
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="heart-wrap">
+
+        <canvas id="heartCanvas"></canvas>
+
+        <div class="heart-glow"></div>
+
+        <div class="heart-title">
+          I Love You ❤️
+        </div>
+
+        <div class="heart-message">
+          ♥ juntos se siente bonito ♥
+        </div>
+
+      </div>
+
+
+      <div class="photo-card center-photo">
+
+        <img
+          src="fotos/foto3.jpg"
+          alt="Foto principal"
+        >
+
+        <div class="photo-caption">
+          Nuestro momento 💕
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="message">
+
+      <div class="message-line"></div>
+
+      <p>
+        No hace falta que sea perfecto,<br>
+        solo que sea nuestro.
+      </p>
+
+      <div class="message-line"></div>
+
+    </section>
+
+
+    <button
+      id="musicButton"
+      class="music-button"
+      type="button"
+    >
+
+      <span class="music-icon">
+        ♫
+      </span>
+
+      <span id="musicText">
+        Música
+      </span>
+
+    </button>
+
+
+    <audio
+      id="music"
+      loop
+      preload="metadata"
+    >
+
+      <source
+        src="musica.mp3"
+        type="audio/mpeg"
+      >
+
+    </audio>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
