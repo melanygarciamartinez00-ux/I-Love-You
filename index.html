@@ -1,176 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me amas?</title>
 
-  <title>I Love You ❤️</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div id="loading">
-    <div class="loader-heart">♥</div>
-    <p>Preparando algo especial...</p>
-  </div>
+    <div class="wrapper" id="viewInterface">
+        <div class="pixel-window" id="popupWindow">
 
-  <main id="app">
+            <div class="window-bar">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+            </div>
 
-    <canvas id="particles"></canvas>
+            <div class="window-body">
+                <h1 class="title-text">¿Me amas?</h1>
 
-    <div class="stars"></div>
-
-    <header class="top">
-
-      <p class="small-title">
-        Una página hecha con cariño
-      </p>
-
-      <h1>
-        I Love You <span>♥</span>
-      </h1>
-
-      <p class="subtitle">
-        Mi persona favorita, mi lugar favorito.
-      </p>
-
-    </header>
-
-
-    <section class="scene">
-
-      <div class="floating-note note-1">
-        Siempre juntos ♥
-      </div>
-
-      <div class="floating-note note-2">
-        Eres especial ✨
-      </div>
-
-      <div class="floating-note note-3">
-        Te quiero mucho 💗
-      </div>
-
-      <div class="floating-note note-4">
-        Por siempre ♡
-      </div>
-
-
-      <div class="photo-orbit orbit-left">
-
-        <div class="photo-card">
-
-          <img
-            src="fotos/foto1.jpg"
-            alt="Foto 1"
-          >
+                <div class="btn-container">
+                    <button class="pixel-btn" onclick="triggerYes()">Sí</button>
+                    <button class="pixel-btn" onclick="triggerNo()">No</button>
+                </div>
+            </div>
 
         </div>
+    </div>
 
-      </div>
+    <!-- RESPUESTA AL PRESIONAR NO -->
+    <div class="pixel-smiler" id="smileContainer">
+        <div>:) </div>
+        <div class="caca-text">Come caca 💩</div>
+    </div>
 
+    <!-- ANIMACIÓN AL PRESIONAR SÍ -->
+    <div class="neon-center-set" id="neonSet">
 
-      <div class="photo-orbit orbit-right">
+        <div class="neon-text">TE AMO</div>
 
-        <div class="photo-card">
+        <svg class="neon-heart-svg" viewBox="0 0 24 24" fill="#ffccff">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+            C13.09 3.81 14.76 3 16.5 3
+            19.58 3 22 5.42 22 8.5
+            c0 3.78-3.4 6.86-8.55 11.54
+            L12 21.35z"/>
+        </svg>
 
-          <img
-            src="fotos/foto2.jpg"
-            alt="Foto 2"
-          >
+    </div>
 
-        </div>
+    <!-- FONDO DE TE AMO -->
+    <div class="matrix-bg" id="bgContainer"></div>
 
-      </div>
-
-
-      <div class="heart-wrap">
-
-        <canvas id="heartCanvas"></canvas>
-
-        <div class="heart-glow"></div>
-
-        <div class="heart-title">
-          I Love You ❤️
-        </div>
-
-        <div class="heart-message">
-          ♥ juntos se siente bonito ♥
-        </div>
-
-      </div>
-
-
-      <div class="photo-card center-photo">
-
-        <img
-          src="fotos/foto3.jpg"
-          alt="Foto principal"
-        >
-
-        <div class="photo-caption">
-          Nuestro momento 💕
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="message">
-
-      <div class="message-line"></div>
-
-      <p>
-        No hace falta que sea perfecto,<br>
-        solo que sea nuestro.
-      </p>
-
-      <div class="message-line"></div>
-
-    </section>
-
-
-    <button
-      id="musicButton"
-      class="music-button"
-      type="button"
-    >
-
-      <span class="music-icon">
-        ♫
-      </span>
-
-      <span id="musicText">
-        Música
-      </span>
-
-    </button>
-
-
-    <audio
-      id="music"
-      loop
-      preload="metadata"
-    >
-
-      <source
-        src="musica.mp3"
-        type="audio/mpeg"
-      >
-
-    </audio>
-
-  </main>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
